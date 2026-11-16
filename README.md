@@ -39,10 +39,10 @@ A fully configurable Power Apps Component Framework (PCF) control for exporting 
 
 You can get started in two ways:
 
-1. **Import Solutions**: In this repository's `/solutions` folder, you'll find both managed and unmanaged solutions:
+1. **Import Solutions**: At the root of this repository you'll find both managed and unmanaged solutions:
 
-   * `ExportToExcelPCF_managed.zip`
-   * `ExportToExcelPCF_unmanaged.zip`
+   * `ExportToExcelPCF_1.0.0.0_managed.zip`
+   * `ExportToExcelPCF_1.0.0.0.zip` (unmanaged)
 
    Simply import the desired solution into your Dataverse environment. The PCF control will then be available to add directly into your Canvas app without further build steps.
 
@@ -51,13 +51,13 @@ You can get started in two ways:
    If you wish to modify or extend the control's source code:
 
    ```bash
-   git clone https://github.com/keyur-choksi/ExportToExcelPCF.git
-   cd ExportToExcelPCF
+   git clone https://github.com/keyurchoksi/ExportToExcelPCF.git
+   cd ExportToExcelPCF/ExportToExcelPCF
    npm install
    npm run build
    ```
 
-   Update the `ControlManifest.input.xml` or `index.ts` as needed, then re-package and import your custom unmanaged solution.
+   Update `ControlManifest.Input.xml` or `index.ts` as needed, then re-package and import your custom unmanaged solution. Run `npm start` to try the control in the local PCF test harness.
 
 ## Properties Reference
 
